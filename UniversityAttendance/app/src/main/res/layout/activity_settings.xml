@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context="com.example.dustinteel.universityattendance.MainActivity">
+
+    <TextView
+        android:id="@+id/settingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textColor="#f1ed11"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/clearProf"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clearProf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clearProf"
+        android:text="@string/clear_stored_professor_usernames"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/clearClass"
+        app:layout_constraintTop_toBottomOf="@+id/settingTitle" />
+
+    <Button
+        android:id="@+id/clearClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clearClass"
+        android:text="@string/clear_stored_class_names"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clearProf"
+        app:layout_constraintBottom_toTopOf="@+id/settingsDone" />
+
+    <Button
+        android:id="@+id/settingsDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doneTapped"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clearClass" />
+</android.support.constraint.ConstraintLayout>
