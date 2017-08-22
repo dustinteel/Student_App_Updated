@@ -23,10 +23,6 @@ import java.util.Iterator;
 
 import javax.net.ssl.HttpsURLConnection;
 
-/**
- * Created by TylerBowlen on 4/10/17.
- */
-
 public class SendAttendanceInfo extends AsyncTask<String, Void, String> {
 
     String urlString = "http://universityattendance.000webhostapp.com/mysql.php";
